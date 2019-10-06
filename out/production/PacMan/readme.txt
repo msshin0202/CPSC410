@@ -8,5 +8,3 @@ rules are followed:
   page.
 
 
-
-
