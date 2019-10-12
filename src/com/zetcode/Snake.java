@@ -10,6 +10,8 @@ public class Snake extends JFrame {
 
     public static Board board = new Board();
 
+    public static Board board = new Board();
+
     public Snake() {
         
         initUI();
@@ -29,10 +31,10 @@ public class Snake extends JFrame {
     
 
     public static void main(String[] args) {
-        PROGRAM program = new PROGRAM();
-        program.parse();
-        program.evaluate();
-        
+        PROGRAM p = new PROGRAM();
+        p.parse();
+        p.evaluate();
+
         EventQueue.invokeLater(() -> {
             JFrame ex = new Snake();
             ex.setVisible(true);
