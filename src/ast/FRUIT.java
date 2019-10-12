@@ -17,9 +17,7 @@ public class FRUIT extends Node {
 
     @Override
     public String evaluate() {
-        String basicLoc = Snake.board.getBasicLoc();
-        // "src/resources/apple.png"
-        Snake.board.setAppleLoc(basicLoc + color.evaluate() + ".png");
+        Snake.board.setAppleLoc(color.evaluate());
         return null;
     }
 }

@@ -289,7 +289,7 @@ public class Board extends JPanel implements ActionListener {
     }
 
     public void setBodyLoc(String bodyLoc) {
-        this.bodyLoc = bodyLoc;
+        this.bodyLoc = basicLoc + bodyLoc + ".png";
     }
 
     public String getAppleLoc() {
@@ -297,7 +297,7 @@ public class Board extends JPanel implements ActionListener {
     }
 
     public void setAppleLoc(String appleLoc) {
-        this.appleLoc = appleLoc;
+        this.appleLoc = basicLoc + appleLoc + ".png";
     }
 
     public String getHeadLoc() {
@@ -305,6 +305,6 @@ public class Board extends JPanel implements ActionListener {
     }
 
     public void setHeadLoc(String headLoc) {
-        this.headLoc = headLoc;
+        this.headLoc = basicLoc + headLoc + ".png";
     }
 }
