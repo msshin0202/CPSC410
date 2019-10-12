@@ -5,18 +5,20 @@ import libs.Node;
 import static com.zetcode.Snake.board;
 
 public class SNAKE extends Node {
-    private String headColor = "";
-    private String bodyColor = "";
+    private COLOR headColor;
+    private COLOR bodyColor;
     private int size = 0;
     private int speed = 0;
 
     @Override
     public void parse() {
         tokenizer.getAndCheckNext("snake");
-        tokenizer.getAndCheckNext("set");
-        headColor = tokenizer.getNext();
-        tokenizer.getAndCheckNext("set");
-        bodyColor = tokenizer.getNext();
+        tokenizer.getAndCheckNext("headcolor");
+        headColor = new COLOR();
+        headColor.parse();
+        tokenizer.getAndCheckNext("bodycolor");
+        bodyColor = new COLOR();
+        bodyColor.parse();
         tokenizer.getAndCheckNext("size");
         size = Integer.parseInt(tokenizer.getNext());
         tokenizer.getAndCheckNext("speed");
@@ -25,8 +27,8 @@ public class SNAKE extends Node {
 
     @Override
     public String evaluate() {
-        board.setHeadLoc(headColor);
-        board.setBodyLoc(bodyColor);
+        board.setHeadLoc(headColor.evaluate());
+        board.setBodyLoc(bodyColor.evaluate());
         board.setDELAY(speed);
         board.setDots(size);
 
