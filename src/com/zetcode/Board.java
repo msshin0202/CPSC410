@@ -42,7 +42,7 @@ public class Board extends JPanel implements ActionListener {
     private Image apple;
     private Image head;
 
-    private String location = "src/resources/";
+    private final String basicLoc = "src/resources/";
     private String bodyLoc = "src/resources/dot.png";
     private String appleLoc = "src/resources/apple.png";
     private String headLoc = "src/resources/head.png";
@@ -281,6 +281,8 @@ public class Board extends JPanel implements ActionListener {
     public void setDots(int dots) {
         this.dots = dots;
     }
+
+    public String getBasicLoc() { return basicLoc; }
 
     public String getBodyLoc() {
         return bodyLoc;
