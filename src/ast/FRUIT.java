@@ -19,4 +19,5 @@ public class FRUIT extends Node {
         Snake.board.setAppleLoc(basicLoc + color + ".png");
         return null;
     }
+
 }
