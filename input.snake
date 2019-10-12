@@ -1,0 +1,12 @@
+start
+    board
+        width 400
+        height 600
+    snake
+        headcolor set green
+        bodycolor set yellow
+        size 20
+        speed 100
+    fruit
+        fcolor set red
+end
