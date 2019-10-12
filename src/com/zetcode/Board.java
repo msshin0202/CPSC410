@@ -48,12 +48,10 @@ public class Board extends JPanel implements ActionListener {
     private String headLoc = "src/resources/red.png";
 
     public Board() {
-        
         initBoard();
     }
     
     private void initBoard() {
-
         addKeyListener(new TAdapter());
         setBackground(Color.black);
         setFocusable(true);
