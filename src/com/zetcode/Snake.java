@@ -1,9 +1,12 @@
 package com.zetcode;
 
+import ast.PROGRAM;
+
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 
 public class Snake extends JFrame {
+    public static Board board = new Board();
 
     public Snake() {
         
@@ -12,7 +15,7 @@ public class Snake extends JFrame {
     
     private void initUI() {
         
-        add(new Board());
+        add(board);
                
         setResizable(false);
         pack();
@@ -24,6 +27,9 @@ public class Snake extends JFrame {
     
 
     public static void main(String[] args) {
+        PROGRAM program = new PROGRAM();
+        program.parse();
+        program.evaluate();
         
         EventQueue.invokeLater(() -> {
             JFrame ex = new Snake();
