@@ -5,6 +5,8 @@ import javax.swing.JFrame;
 
 public class Snake extends JFrame {
 
+    public static Board board = new Board();
+
     public Snake() {
         
         initUI();
