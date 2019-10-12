@@ -44,7 +44,7 @@ public class Board extends JPanel implements ActionListener {
 
     private final String basicLoc = "src/resources/";
     private String bodyLoc = "src/resources/green.png";
-    private String appleLoc = "src/resources/apple.png";
+    private String appleLoc = "src/resources/greenApple.png";
     private String headLoc = "src/resources/red.png";
 
     public Board() {
@@ -67,7 +67,7 @@ public class Board extends JPanel implements ActionListener {
         ImageIcon iid = new ImageIcon(bodyLoc);
         ball = iid.getImage();
 
-        // ImageIcon iia = new ImageIcon("src/resources/apple.png");
+        // ImageIcon iia = new ImageIcon("src/resources/greenApple.png");
         ImageIcon iia = new ImageIcon(appleLoc);
         apple = iia.getImage();
 
