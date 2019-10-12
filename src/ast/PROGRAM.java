@@ -9,24 +9,21 @@ public class PROGRAM extends Node {
 
     @Override
     public void parse() {
-        String nextNode = tokenizer.getAndCheckNext("start");
+        tokenizer.getAndCheckNext("start");
 
-        while(!tokenizer.checkToken("end")) {
-            switch (nextNode) {
-                case "board":
-                    board = new BOARD();
-                    board.parse();
-                    break;
-                case "snake":
-                    snake = new SNAKE();
-                    snake.parse();
-                    break;
-                case "fruit":
-                    fruit = new FRUIT();
-                    fruit.parse();
-                    break;
+        while (!tokenizer.checkToken("end")) {
+            if (tokenizer.checkToken("board")) {
+                board = new BOARD();
+                board.parse();
             }
-            nextNode = tokenizer.getNext();
+            if (tokenizer.checkToken("snake")) {
+                snake = new SNAKE();
+                snake.parse();
+            }
+            if (tokenizer.checkToken("fruit")) {
+                fruit = new FRUIT();
+                fruit.parse();
+            }
         }
     }
 

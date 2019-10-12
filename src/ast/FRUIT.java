@@ -11,6 +11,7 @@ public class FRUIT extends Node {
     @Override
     public void parse() {
         tokenizer.getAndCheckNext("fruit");
+        tokenizer.getAndCheckNext("fcolor");
         color = new COLOR();
         color.parse();
     }

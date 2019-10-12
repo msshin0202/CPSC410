@@ -10,14 +10,16 @@ public class BOARD extends Node {
     @Override
     public void parse() {
         tokenizer.getAndCheckNext("board");
-        if (tokenizer.checkToken("width")) {
-            tokenizer.getAndCheckNext("width");
-            width = Integer.parseInt(tokenizer.getNext());
+        for (int i = 0; i < 2; i++){
+            if (tokenizer.checkToken("width")) {
+                tokenizer.getAndCheckNext("width");
+                width = Integer.parseInt(tokenizer.getNext());
+            }
+            if (tokenizer.checkToken("height")) {
+                tokenizer.getAndCheckNext("height");
+                height = Integer.parseInt(tokenizer.getNext());
+            }
         }
-        if (tokenizer.checkToken("height")) {
-            height = Integer.parseInt(tokenizer.getNext());
-        }
-
     }
 
     @Override

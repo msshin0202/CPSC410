@@ -56,6 +56,10 @@ public class Board extends JPanel implements ActionListener {
         setBackground(Color.black);
         setFocusable(true);
 
+
+    }
+
+    public void setBoard() {
         setPreferredSize(new Dimension(B_WIDTH, B_HEIGHT));
         loadImages();
         initGame();
@@ -297,7 +301,7 @@ public class Board extends JPanel implements ActionListener {
     }
 
     public void setAppleLoc(String appleLoc) {
-        this.appleLoc = basicLoc + appleLoc + ".png";
+        this.appleLoc = basicLoc + appleLoc + "Apple.png";
     }
 
     public String getHeadLoc() {
