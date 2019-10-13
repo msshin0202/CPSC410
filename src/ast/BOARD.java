@@ -28,4 +28,14 @@ public class BOARD extends STATEMENT {
         Snake.board.setB_WIDTH(width);
         return null;
     }
+
+    @Override
+    public void nameCheck() {
+
+    }
+
+    @Override
+    public void typeCheck() {
+
+    }
 }

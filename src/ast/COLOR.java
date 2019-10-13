@@ -1,5 +1,6 @@
 package ast;
 
+import libs.NameCheckException;
 import libs.Node;
 
 public class COLOR extends STATEMENT {
@@ -14,5 +15,17 @@ public class COLOR extends STATEMENT {
     @Override
     public String evaluate() {
         return color;
+    }
+
+    @Override
+    public void nameCheck() {
+        if (!Node.colorSet.contains(color)) {
+            throw new NameCheckException(color);
+        }
+    }
+
+    @Override
+    public void typeCheck() {
+
     }
 }

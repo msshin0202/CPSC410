@@ -3,7 +3,7 @@ start
         width 400
         height 600
     snake
-        headcolor set green
+        headcolor set blue
         bodycolor set yellow
         size 20
         speed 100

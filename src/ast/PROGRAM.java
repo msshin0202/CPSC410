@@ -58,4 +58,18 @@ public class PROGRAM extends Node {
         }
         return null;
     }
+
+    @Override
+    public void nameCheck() {
+        for (STATEMENT s: statements) {
+            s.nameCheck();
+        }
+    }
+
+    @Override
+    public void typeCheck() {
+        for (STATEMENT s: statements) {
+            s.typeCheck();
+        }
+    }
 }

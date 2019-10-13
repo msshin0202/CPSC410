@@ -21,4 +21,14 @@ public class FRUIT extends STATEMENT {
         Snake.board.setAppleLoc(color.evaluate());
         return null;
     }
+
+    @Override
+    public void nameCheck() {
+
+    }
+
+    @Override
+    public void typeCheck() {
+
+    }
 }

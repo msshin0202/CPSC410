@@ -34,4 +34,14 @@ public class SNAKE extends STATEMENT {
 
         return null;
     }
+
+    @Override
+    public void nameCheck() {
+
+    }
+
+    @Override
+    public void typeCheck() {
+
+    }
 }
