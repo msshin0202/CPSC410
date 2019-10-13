@@ -1,5 +1,4 @@
-PROGRAM := "start" STATEMENTS* "end"
-STATEMENT := BOARD | SNAKE | FRUIT
+PROGRAM := "start" BOARD | SNAKE | FRUIT "end"
 
 BOARD := "board" WIDTH HEIGHT
 WIDTH := "width" NUMBER

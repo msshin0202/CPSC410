@@ -20,7 +20,7 @@ public class Main {
         List<String> literals = Arrays.asList("start", "board", "width", "height", "snake","headcolor", "bodycolor",
                 "size", "speed", "fruit", "applecolor", "set", "end");
         Tokenizer.makeTokenizer("input.snake",literals);
-        PROGRAM p = new PROGRAM();
+        Node p = new PROGRAM();
         p.parse();
         p.evaluate();
         board.setBoard();

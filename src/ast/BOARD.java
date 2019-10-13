@@ -1,8 +1,9 @@
 package ast;
 
 import com.zetcode.Snake;
+import libs.Node;
 
-public class BOARD extends STATEMENT {
+public class BOARD extends Node {
     public int height;
     public int width;
 

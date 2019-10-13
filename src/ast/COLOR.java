@@ -3,7 +3,7 @@ package ast;
 import libs.NameCheckException;
 import libs.Node;
 
-public class COLOR extends STATEMENT {
+public class COLOR extends Node {
     String color;
 
     @Override
@@ -14,12 +14,13 @@ public class COLOR extends STATEMENT {
 
     @Override
     public String evaluate() {
+        nameCheck();
         return color;
     }
 
     @Override
     public void nameCheck() {
-        if (!Node.colorSet.contains(color)) {
+        if (!colorSet.contains(color)) {
             throw new NameCheckException(color);
         }
     }

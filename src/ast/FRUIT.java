@@ -1,8 +1,9 @@
 package ast;
 
 import com.zetcode.Snake;
+import libs.Node;
 
-public class FRUIT extends STATEMENT {
+public class FRUIT extends Node {
     private COLOR color;
 
     @Override
@@ -21,7 +22,7 @@ public class FRUIT extends STATEMENT {
 
     @Override
     public void nameCheck() {
-
+        color.nameCheck();
     }
 
     @Override

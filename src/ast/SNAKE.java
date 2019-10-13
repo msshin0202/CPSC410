@@ -1,8 +1,10 @@
 package ast;
 
+import libs.Node;
+
 import static com.zetcode.Snake.board;
 
-public class SNAKE extends STATEMENT {
+public class SNAKE extends Node {
     private COLOR headColor;
     private COLOR bodyColor;
     private int size = 0;
