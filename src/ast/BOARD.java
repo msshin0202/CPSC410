@@ -1,6 +1,7 @@
 package ast;
 
 import com.zetcode.Snake;
+import libs.BoundaryCheckException;
 import libs.Node;
 
 public class BOARD extends Node {
@@ -27,5 +28,14 @@ public class BOARD extends Node {
         Snake.board.setB_HEIGHT(height);
         Snake.board.setB_WIDTH(width);
         return null;
+    }
+
+    public void nameCheck() {
+        if (height > 1000 || height < 100) {
+            throw new BoundaryCheckException(height);
+        }
+        if (width > 1000 || width < 100) {
+            throw new BoundaryCheckException(width);
+        }
     }
 }
