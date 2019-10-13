@@ -80,8 +80,7 @@ public class Tokenizer {
     public String getAndCheckNext(String regexp){
         String s = getNext();
         if (!s.matches(regexp)) {
-            System.out.println("FAILED!!!!  on "+ regexp);
-            System.exit(0);
+            throw new TokenizerException(regexp);
         }
         System.out.println("matched: "+s+"  to  "+regexp);
         return s;
