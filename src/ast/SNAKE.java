@@ -1,7 +1,5 @@
 package ast;
 
-import libs.Node;
-
 import static com.zetcode.Snake.board;
 
 public class SNAKE extends STATEMENT {

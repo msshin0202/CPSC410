@@ -7,9 +7,11 @@ import java.util.List;
 
 public class PROGRAM extends Node {
     private List<STATEMENT> statements = new ArrayList<>();
+    /*
     BOARD board;
     SNAKE snake;
     FRUIT fruit;
+     */
 
     /*
     @Override

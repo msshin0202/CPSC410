@@ -1,9 +1,6 @@
 package ast;
 
 import com.zetcode.Snake;
-import libs.Node;
-
-import java.awt.*;
 
 public class FRUIT extends STATEMENT {
     private COLOR color;

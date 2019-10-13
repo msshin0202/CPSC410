@@ -1,7 +1,6 @@
 package ast;
 
 import com.zetcode.Snake;
-import libs.Node;
 
 public class BOARD extends STATEMENT {
     public int height;
