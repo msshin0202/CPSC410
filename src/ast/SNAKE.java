@@ -1,5 +1,6 @@
 package ast;
 
+import libs.BoundaryCheckException;
 import libs.Node;
 
 import static com.zetcode.Snake.board;
@@ -29,9 +30,18 @@ public class SNAKE extends Node {
     public String evaluate() {
         board.setHeadLoc(headColor.evaluate());
         board.setBodyLoc(bodyColor.evaluate());
+
+        boundaryCheck();
+        speed = (board.getB_WIDTH() + board.getB_HEIGHT())/2/speed;
         board.setDELAY(speed);
         board.setDots(size);
 
         return null;
+    }
+
+    public void boundaryCheck() {
+        if (speed >= 100 || speed <= 1) {
+            throw new BoundaryCheckException(speed, "snake");
+        }
     }
 }

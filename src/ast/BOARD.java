@@ -27,15 +27,16 @@ public class BOARD extends Node {
     public String evaluate() {
         Snake.board.setB_HEIGHT(height);
         Snake.board.setB_WIDTH(width);
+        boundaryCheck();
         return null;
     }
 
-    public void nameCheck() {
+    public void boundaryCheck() {
         if (height > 1000 || height < 100) {
-            throw new BoundaryCheckException(height);
+            throw new BoundaryCheckException(height, "height");
         }
         if (width > 1000 || width < 100) {
-            throw new BoundaryCheckException(width);
+            throw new BoundaryCheckException(width, "width");
         }
     }
 }

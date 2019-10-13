@@ -1,12 +1,12 @@
 start
     board
-        width 400
-        height 600
+        width 1000
+        height 1000
     snake
-        headcolor set blue
+        headcolor set orange
         bodycolor set yellow
         size 20
-        speed 100
+        speed 500
     fruit
         applecolor set red
 end
