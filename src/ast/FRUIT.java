@@ -19,14 +19,4 @@ public class FRUIT extends Node {
         Snake.board.setAppleLoc(color.evaluate());
         return null;
     }
-
-    @Override
-    public void nameCheck() {
-        color.nameCheck();
-    }
-
-    @Override
-    public void typeCheck() {
-
-    }
 }

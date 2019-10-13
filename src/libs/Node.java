@@ -15,6 +15,4 @@ public abstract class Node {
 
     abstract public void parse();
     abstract public String evaluate();
-    abstract public void nameCheck();
-    abstract public void typeCheck();
 }

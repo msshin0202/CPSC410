@@ -18,15 +18,9 @@ public class COLOR extends Node {
         return color;
     }
 
-    @Override
     public void nameCheck() {
         if (!colorSet.contains(color)) {
             throw new NameCheckException(color);
         }
-    }
-
-    @Override
-    public void typeCheck() {
-
     }
 }

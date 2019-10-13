@@ -34,14 +34,4 @@ public class SNAKE extends Node {
 
         return null;
     }
-
-    @Override
-    public void nameCheck() {
-
-    }
-
-    @Override
-    public void typeCheck() {
-
-    }
 }

@@ -28,14 +28,4 @@ public class BOARD extends Node {
         Snake.board.setB_WIDTH(width);
         return null;
     }
-
-    @Override
-    public void nameCheck() {
-
-    }
-
-    @Override
-    public void typeCheck() {
-
-    }
 }

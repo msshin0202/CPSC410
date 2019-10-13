@@ -41,14 +41,4 @@ public class PROGRAM extends Node {
         fruit.evaluate();
         return null;
     }
-
-    @Override
-    public void nameCheck() {
-
-    }
-
-    @Override
-    public void typeCheck() {
-
-    }
 }
