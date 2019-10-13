@@ -17,7 +17,8 @@ import static com.zetcode.Snake.board;
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
-        List<String> literals = Arrays.asList("start","board","width","height","snake","size","speed","fruit","set", "headcolor", "bodycolor", "end", "fcolor");
+        List<String> literals = Arrays.asList("start", "board", "width", "height", "snake","headcolor", "bodycolor",
+                "size", "speed", "fruit", "applecolor", "set", "end");
         Tokenizer.makeTokenizer("input.snake",literals);
         PROGRAM p = new PROGRAM();
         p.parse();

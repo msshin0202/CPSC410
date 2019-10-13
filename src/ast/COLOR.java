@@ -2,7 +2,7 @@ package ast;
 
 import libs.Node;
 
-public class COLOR extends Node {
+public class COLOR extends STATEMENT {
     String color;
 
     @Override

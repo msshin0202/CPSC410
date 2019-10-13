@@ -4,7 +4,7 @@ import libs.Node;
 
 import static com.zetcode.Snake.board;
 
-public class SNAKE extends Node {
+public class SNAKE extends STATEMENT {
     private COLOR headColor;
     private COLOR bodyColor;
     private int size = 0;

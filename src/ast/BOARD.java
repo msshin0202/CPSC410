@@ -3,7 +3,7 @@ package ast;
 import com.zetcode.Snake;
 import libs.Node;
 
-public class BOARD extends Node {
+public class BOARD extends STATEMENT {
     public int height;
     public int width;
 

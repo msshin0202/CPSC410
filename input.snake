@@ -8,5 +8,5 @@ start
         size 20
         speed 100
     fruit
-        fcolor set red
+        applecolor set red
 end

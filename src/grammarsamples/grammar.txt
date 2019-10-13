@@ -1,4 +1,5 @@
-PROGRAM := "start" BOARD SNAKE FRUIT "end"
+PROGRAM := "start" STATEMENTS* "end"
+STATEMENT := BOARD | SNAKE | FRUIT
 
 BOARD := "board" WIDTH HEIGHT
 WIDTH := "width" NUMBER
@@ -10,8 +11,8 @@ BODYCOLOR := "bodycolor" COLOR
 SIZE := "size" NUMBER
 SPEED := "speed" NUMBER
 
-FRUIT := "fruit" FCOLOR
-FCOLOR := "fcolor" COLOR
+FRUIT := "fruit" APPLECOLOR
+APPLECOLOR := "applecolor" COLOR
 
 COLOR := "set" ["green" | "orange" | "red" | "yellow"]
 NUMBER := 0-9+

@@ -5,13 +5,13 @@ import libs.Node;
 
 import java.awt.*;
 
-public class FRUIT extends Node {
+public class FRUIT extends STATEMENT {
     private COLOR color;
 
     @Override
     public void parse() {
         tokenizer.getAndCheckNext("fruit");
-        tokenizer.getAndCheckNext("fcolor");
+        tokenizer.getAndCheckNext("applecolor");
         color = new COLOR();
         color.parse();
     }
