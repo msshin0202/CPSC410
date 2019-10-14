@@ -22,6 +22,9 @@ public class TokenizerException extends RuntimeException {
             case "applecolor":
                 errorMessage += String.format("fruit's %s", literal);
                 break;
+            case "set":
+                errorMessage = "you did not put \"set\" when setting color.";
+                break;
         }
         System.err.println(errorMessage);
         System.exit(0);
