@@ -21,7 +21,7 @@ public class Tokenizer {
         try {
             program = new String(Files.readAllBytes(Paths.get(filename)), StandardCharsets.UTF_8);
         } catch (IOException e) {
-            System.out.println("Didn't find file");
+           System.out.println("Didn't find file");
             System.exit(0);
         }
         tokenize();
@@ -32,21 +32,17 @@ public class Tokenizer {
         tokenizedProgram = tokenizedProgram.toLowerCase();
         tokenizedProgram = tokenizedProgram.replace("\n","");
         tokenizedProgram = tokenizedProgram.replaceAll("([0-9]+)","_$1_");
-        System.out.println(program);
 
         for (String s : literals){
 //            tokenizedProgram = tokenizedProgram.replaceAll(s,"_"+s+"_");
             tokenizedProgram = tokenizedProgram.replace(s,"_"+s+"_");
-            System.out.println(tokenizedProgram);
         }
 //        tokenizedProgram = tokenizedProgram.replaceAll("__","_");
         tokenizedProgram = tokenizedProgram.replaceAll("[ ]+","");
-        System.out.println(tokenizedProgram);
         String [] temparray=tokenizedProgram.split("[_]+");
         tokens = new String[temparray.length-1];
 
         System.arraycopy(temparray,1,tokens,0,temparray.length-1);
-        System.out.println(Arrays.asList(tokens));
     }
 
     private String checkNext(){
@@ -73,7 +69,6 @@ public class Tokenizer {
 
     public boolean checkToken(String regexp){
         String s = checkNext();
-        System.out.println("comparing: |"+s+"|  to  |"+regexp+"|");
         return (s.matches(regexp));
     }
 
@@ -83,7 +78,6 @@ public class Tokenizer {
         if (!s.matches(regexp)) {
             throw new TokenizerException(regexp);
         }
-        System.out.println("matched: "+s+"  to  "+regexp);
         return s;
     }
 
