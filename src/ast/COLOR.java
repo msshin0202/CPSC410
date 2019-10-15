@@ -8,7 +8,6 @@ public class COLOR extends Node {
 
     @Override
     public void parse() {
-        tokenizer.getAndCheckNext("set");
         color = tokenizer.getNext();
     }
 
