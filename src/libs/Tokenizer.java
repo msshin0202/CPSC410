@@ -29,6 +29,7 @@ public class Tokenizer {
 
     private void tokenize (){
         String tokenizedProgram = program;
+        tokenizedProgram = tokenizedProgram.toLowerCase();
         tokenizedProgram = tokenizedProgram.replace("\n","");
         tokenizedProgram = tokenizedProgram.replaceAll("([0-9]+)","_$1_");
         System.out.println(program);
